@@ -1,0 +1,63 @@
+doctype html 
+html
+    head 
+        style
+            include ../static/style.css
+    
+    body 
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/img2.png")
+                    | MDA 
+                li #[a(href='/') Home] 
+                li #[a(href='/') About]
+                li #[a(href='/') Services]
+                li #[a(href='/') Class Info]
+                li #[a(href='/') Contact Us]
+
+        section#introSection 
+            div Welcome to Monisha's Dance Academy
+            div.small Eat Sleep Dance Repeat
+
+        section#missionSection 
+            h2 Our Mission   
+            div.card 
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img 
+                        img(src="/static/img1.png") 
+
+                    div.card-content 
+                        p This is the best dance academy of the universe    
+            div.card 
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img 
+                        img(src="/static/img2.png") 
+
+                    div.card-content 
+                        p This is the best dance academy of the universe  
+            div.card 
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img 
+                        img(src="/static/img3.png") 
+
+                    div.card-content 
+                        p This is the best dance academy of the universe  
+
+        section#sponserSection 
+            h3 Our Sponsers    
+            div#sponsers 
+                img(src="static/apple.png",alt="Sponser Image", class="spImage")
+                img(src="static/hp.png",alt="Sponser Image", class="spImage")
+                img(src="static/google.png",alt="Sponser Image", class="spImage")
+                img(src="static/skype.png",alt="Sponser Image", class="spImage")
+
+        footer#footer 
+            | Copyright © 2021 MonishaDanceAcademy.com | All Rights reserved  
+                
+        script 
+            include ../static/index.js
+            
